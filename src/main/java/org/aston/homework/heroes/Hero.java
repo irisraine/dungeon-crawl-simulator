@@ -44,11 +44,11 @@ public abstract class Hero implements Mortal, Evadable {
     };
 
     public void inflictStatus(Status status) {
-        statuses.put(status, 2);
+        statuses.put(status, 4);
     }
 
     public void getStatusEffects() {
-        int changeHealthPerTurn = 30;
+        int changeHealthPerTurn = 15;
 
         for (Map.Entry<Status, Integer> status : this.statuses.entrySet()) {
             if (status.getValue() == 0) continue;
