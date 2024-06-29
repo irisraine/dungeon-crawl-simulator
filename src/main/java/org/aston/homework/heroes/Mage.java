@@ -1,7 +1,8 @@
-package org.aston.heroes;
+package org.aston.homework.heroes;
 
-import org.aston.enemies.Enemy;
-import org.aston.utils.*;
+import org.aston.homework.enemies.Enemy;
+import org.aston.homework.utils.*;
+
 
 public class Mage extends Hero{
     private final static int HEALTH_MAX_SIZE = 200;

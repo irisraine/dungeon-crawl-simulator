@@ -1,11 +1,10 @@
-package org.aston.heroes;
+package org.aston.homework.heroes;
 
-import org.aston.enemies.Enemy;
-import org.aston.interfaces.*;
-import org.aston.utils.*;
+import org.aston.homework.enemies.Enemy;
+import org.aston.homework.interfaces.*;
+import org.aston.homework.utils.*;
+import java.util.*;
 
-import java.util.HashMap;
-import java.util.Map;
 
 public abstract class Hero implements Mortal, Evadable {
     private final String name;

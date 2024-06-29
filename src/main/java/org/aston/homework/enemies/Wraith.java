@@ -1,7 +1,8 @@
-package org.aston.enemies;
+package org.aston.homework.enemies;
 
-import org.aston.heroes.Hero;
-import org.aston.utils.*;
+import org.aston.homework.heroes.Hero;
+import org.aston.homework.utils.*;
+
 
 public class Wraith extends Enemy{
     private final static int HEALTH_MAX_SIZE = 80;

@@ -1,4 +1,5 @@
-package org.aston.utils;
+package org.aston.homework.utils;
+
 
 public class Names {
     private Names() {}

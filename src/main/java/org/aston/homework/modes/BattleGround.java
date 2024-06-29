@@ -1,9 +1,8 @@
-package org.aston.modes;
+package org.aston.homework.modes;
 
-import org.aston.enemies.*;
-import org.aston.heroes.*;
-import org.aston.utils.*;
-
+import org.aston.homework.enemies.Enemy;
+import org.aston.homework.heroes.Hero;
+import org.aston.homework.utils.*;
 import java.util.ArrayList;
 
 

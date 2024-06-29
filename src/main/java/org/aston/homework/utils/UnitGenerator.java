@@ -1,8 +1,8 @@
-package org.aston.utils;
+package org.aston.homework.utils;
 
 import java.util.ArrayList;
-import org.aston.enemies.*;
-import org.aston.heroes.*;
+import org.aston.homework.enemies.*;
+import org.aston.homework.heroes.*;
 
 
 public class UnitGenerator {

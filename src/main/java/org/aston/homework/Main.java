@@ -1,9 +1,9 @@
-package org.aston;
+package org.aston.homework;
 
 import java.util.*;
-import org.aston.heroes.Hero;
-import org.aston.modes.*;
-import org.aston.utils.*;
+import org.aston.homework.heroes.Hero;
+import org.aston.homework.modes.*;
+import org.aston.homework.utils.*;
 
 
 public class Main {

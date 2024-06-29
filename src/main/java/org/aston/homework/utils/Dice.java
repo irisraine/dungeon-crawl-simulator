@@ -1,6 +1,7 @@
-package org.aston.utils;
+package org.aston.homework.utils;
 
 import java.util.Random;
+
 
 public class Dice {
     private Dice() {}

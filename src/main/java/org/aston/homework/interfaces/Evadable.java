@@ -1,4 +1,5 @@
-package org.aston.interfaces;
+package org.aston.homework.interfaces;
+
 
 public interface Evadable {
     boolean isEvade();

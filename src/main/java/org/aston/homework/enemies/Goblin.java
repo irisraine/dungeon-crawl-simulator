@@ -1,17 +1,17 @@
-package org.aston.enemies;
+package org.aston.homework.enemies;
 
-import org.aston.heroes.Hero;
-import org.aston.utils.*;
+import org.aston.homework.heroes.Hero;
+import org.aston.homework.utils.*;
 
 
-public class Lich extends Enemy {
-    private final static int HEALTH_MAX_SIZE = 100;
-    private final static int DAMAGE_SIZE = 50;
-    private final static int GAUGE_TURN_RATIO = 40;
-    private final static int SPECIAL_ABILITY_THRESHOLD = 19;
-    private final static int EVADE_THRESHOLD = 20;
+public class Goblin extends Enemy{
+    private final static int HEALTH_MAX_SIZE = 30;
+    private final static int DAMAGE_SIZE = 15;
+    private final static int GAUGE_TURN_RATIO = 75;
+    private final static int SPECIAL_ABILITY_THRESHOLD = 15;
+    private final static int EVADE_THRESHOLD = 12;
 
-    public Lich() {
+    public Goblin() {
         super(HEALTH_MAX_SIZE);
     }
 
@@ -31,7 +31,8 @@ public class Lich extends Enemy {
     public void attackHero(Hero hero) {
         if (isUsingSpecialAbility) {
             Messages.specialAbility(this);
-            hero.takeDamage(Integer.MAX_VALUE, DamageType.MAGICAL);
+            hero.inflictStatus(Status.POISON);
+            hero.takeDamage(DAMAGE_SIZE * 2, DamageType.PHYSICAL);
             return;
         }
         Messages.attackByEnemy(this);
@@ -39,12 +40,12 @@ public class Lich extends Enemy {
             Messages.evadeAttack(hero);
             return;
         }
-        hero.takeDamage(DAMAGE_SIZE, DamageType.MAGICAL);
+        hero.takeDamage(DAMAGE_SIZE, DamageType.PHYSICAL);
     }
 
     @Override
     public String toString() {
-        return "Лич";
+        return "Гоблин";
     }
 
     @Override
