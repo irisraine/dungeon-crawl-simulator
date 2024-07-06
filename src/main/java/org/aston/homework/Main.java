@@ -12,6 +12,7 @@ public class Main {
         int gameMode;
         int difficultyLevel;
         boolean readyToNextDungeon;
+        int dungeons = 0;
 
         Messages.greeting();
         ArrayList<Hero> heroesParty = UnitGenerator.createParty();
@@ -36,10 +37,13 @@ public class Main {
                 battleGround.main();
                 readyToNextDungeon = false;
                 if (!heroesParty.isEmpty()) {
+                    dungeons++;
                     Messages.battlegroundProcced();
                     readyToNextDungeon = scanner.nextLine().equalsIgnoreCase("Y");
                 }
             } while (readyToNextDungeon);
+            Messages.infoLog();
+            Messages.dungeonsCleared(dungeons);
         }
     }
 }

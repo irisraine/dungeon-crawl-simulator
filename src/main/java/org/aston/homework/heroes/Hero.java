@@ -47,7 +47,7 @@ public abstract class Hero implements Mortal, Evadable {
         statuses.put(status, 4);
     }
 
-    public void getStatusEffects() {
+    private void getStatusEffects() {
         int changeHealthPerTurn = 15;
 
         for (Map.Entry<Status, Integer> status : this.statuses.entrySet()) {

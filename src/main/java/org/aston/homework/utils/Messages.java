@@ -70,6 +70,10 @@ public class Messages {
             System.out.println("Поражение. Отряд героев уничтожен.");
     }
 
+    public static void dungeonsCleared(int dungeons) {
+        System.out.printf("Герои зачистили %d подземелий.", dungeons);
+    }
+
     public static void damageInflicted(String name, int damage, DamageType damageType) {
         System.out.printf("%s получил %s урон в размере %d единиц здоровья. ", name, damageType, Math.min(damage, 999));
     }
